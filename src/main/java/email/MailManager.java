@@ -76,7 +76,7 @@ public class MailManager {
         String content = mail.getContent();
 
         final String username = "mushrafcs1040@gmail.com";
-        final String password = "pwd123$5";
+        final String password = "liwdssaoyngngweb";
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
