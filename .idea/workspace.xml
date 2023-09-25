@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="fix credential loading error">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidEmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/EmailValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/email/MailManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/email/MailManager.java" afterDir="false" />
+    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="email validation implemented.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/recipients/RecipientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/recipients/RecipientManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +122,7 @@
       <workItem from="1695610333288" duration="10000" />
       <workItem from="1695610370648" duration="45000" />
       <workItem from="1695610424176" duration="4087000" />
-      <workItem from="1695615048679" duration="1395000" />
+      <workItem from="1695615048679" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <option name="closed" value="true" />
@@ -226,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695616018535</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="email validation implemented.">
+      <option name="closed" value="true" />
+      <created>1695616554605</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695616554605</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +269,7 @@
     <MESSAGE value="update starter file in References." />
     <MESSAGE value="fix formatting" />
     <MESSAGE value="fix credential loading error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix credential loading error" />
+    <MESSAGE value="email validation implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="email validation implemented." />
   </component>
 </project>

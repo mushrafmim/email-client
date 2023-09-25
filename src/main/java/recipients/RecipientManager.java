@@ -9,49 +9,38 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 
 public class RecipientManager {
 
-    private static final ArrayList<Recipient> recipientsList = new ArrayList<Recipient>();
+    private static final ArrayList<Recipient> recipientsList = new ArrayList<>();
 
 
-    public static Recipient createRecipient(String[] recipientDetails) throws ParseException {
+    public static void createRecipient(String[] recipientDetails) throws ParseException {
 
-        Recipient recipient;
-
-        switch (recipientDetails[0]) {
-            case "Official":
-                recipient = new OfficialRecipients(
-                        recipientDetails[1],
-                        recipientDetails[2],
-                        recipientDetails[3]
-                );
-                break;
-            case "Office_friend":
-                recipient = new OfficialFriendRecipients(
-                        recipientDetails[1],
-                        recipientDetails[2],
-                        recipientDetails[3],
-                        recipientDetails[4]
-                );
-                break;
-            case "Personal":
-                recipient = new PersonalRecipient(
-                        recipientDetails[1],
-                        recipientDetails[2],
-                        recipientDetails[3],
-                        recipientDetails[4]
-                );
-                break;
-            default:
-                throw new RuntimeException();
-        }
+        Recipient recipient = switch (recipientDetails[0]) {
+            case "Official" -> new OfficialRecipients(
+                    recipientDetails[1],
+                    recipientDetails[2],
+                    recipientDetails[3]
+            );
+            case "Office_friend" -> new OfficialFriendRecipients(
+                    recipientDetails[1],
+                    recipientDetails[2],
+                    recipientDetails[3],
+                    recipientDetails[4]
+            );
+            case "Personal" -> new PersonalRecipient(
+                    recipientDetails[1],
+                    recipientDetails[2],
+                    recipientDetails[3],
+                    recipientDetails[4]
+            );
+            default -> throw new RuntimeException();
+        };
 
         addRecipient(recipient);
 
-        return recipient;
     }
 
     public static void newRecipient(String[] recipientDetails) throws IOException, ParseException {
