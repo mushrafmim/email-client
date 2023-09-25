@@ -13,7 +13,6 @@ public class MailManager {
 
     private static final ArrayList<Mail> sentMail = new ArrayList<>();
 
-
     public static void loadMail() {
         try {
 
@@ -21,7 +20,6 @@ public class MailManager {
             FileInputStream fileStream = new FileInputStream("SentMail.ser");
 
             ObjectInputStream os = new ObjectInputStream(fileStream);
-
 
             while (fileStream.available() > 0) {
                 Mail mail = (Mail) os.readObject();
@@ -60,12 +58,12 @@ public class MailManager {
 
     public static void findMailByDate(Date date) {
 
-        for (Mail mail: sentMail) {
+        for (Mail mail : sentMail) {
 
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
             if (sdf.format(mail.getSentOn()).equals(sdf.format(date))) {
-                System.out.println("To : " +mail.getRecipient());
+                System.out.println("To : " + mail.getRecipient());
                 System.out.println("Subject : " + mail.getSubject());
                 System.out.println("Body : " + mail.getContent() + "\n\n");
             }
@@ -77,14 +75,14 @@ public class MailManager {
         String subject = mail.getSubject();
         String content = mail.getContent();
 
-        final String username = "mushrafmim@gmail.com";
-        final String password = "uwxjhiidwnuvxgcv";
+        final String username = "mushrafcs1040@gmail.com";
+        final String password = "pwd123$5";
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
         prop.put("mail.smtp.port", "587");
         prop.put("mail.smtp.auth", "true");
-        prop.put("mail.smtp.starttls.enable", "true"); //TLS
+        prop.put("mail.smtp.starttls.enable", "true"); // TLS
 
         Session session = Session.getInstance(prop,
                 new javax.mail.Authenticator() {
@@ -99,8 +97,7 @@ public class MailManager {
             message.setFrom(new InternetAddress("from@gmail.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
-                    InternetAddress.parse(recipient_email)
-            );
+                    InternetAddress.parse(recipient_email));
             message.setSubject(subject);
             message.setText(content);
 
