@@ -70,13 +70,29 @@ public class MailManager {
         }
     }
 
+    public static Properties getCredentials() {
+        Properties credentials = new Properties();
+
+        try {
+            InputStream input = new FileInputStream("config.properties");
+
+            System.out.println(credentials.getProperty("email"));
+
+            return credentials;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public static void sendMail(Mail mail) throws MessagingException {
         String recipient_email = mail.getRecipient();
         String subject = mail.getSubject();
         String content = mail.getContent();
 
-        final String username = "mushrafcs1040@gmail.com";
-        final String password = "liwdssaoyngngweb";
+        Properties credentials = getCredentials();
+
+        String username = credentials.getProperty("email");
+        String password = credentials.getProperty("password");
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
