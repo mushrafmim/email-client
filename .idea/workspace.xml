@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="update description.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="add starter files to docs folder." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +85,7 @@
       <workItem from="1695610265224" duration="58000" />
       <workItem from="1695610333288" duration="10000" />
       <workItem from="1695610370648" duration="45000" />
-      <workItem from="1695610424176" duration="3647000" />
+      <workItem from="1695610424176" duration="3949000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <option name="closed" value="true" />
@@ -146,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695614015140</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix formatting README.md">
+      <option name="closed" value="true" />
+      <created>1695614108227</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695614108227</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add starter files to docs folder.">
+      <option name="closed" value="true" />
+      <created>1695614343826</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695614343826</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +195,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="added description." />
     <MESSAGE value="update description." />
-    <option name="LAST_COMMIT_MESSAGE" value="update description." />
+    <MESSAGE value="fix formatting README.md" />
+    <MESSAGE value="add starter files to docs folder." />
+    <option name="LAST_COMMIT_MESSAGE" value="add starter files to docs folder." />
   </component>
 </project>

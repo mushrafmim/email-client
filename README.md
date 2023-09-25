@@ -63,7 +63,7 @@ You may use the code given in this [link](/docs/starter.txt) to implement the ba
 
 ## References
 Starter File  
-https://github.com/mushrafmim/email-client/docs/starter.txt  
+https://github.com/mushrafmim/email-client/blob/main/docs/starter.txt  
 JavaMail API - Sending email via Gmail SMTP Example (Tutorial)
 https://mkyong.com/java/javamail-api-sending-email-via-gmail-smtp-example/
 
