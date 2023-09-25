@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="app password added.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="credentials hidden.">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/email/MailManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/email/MailManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
       <workItem from="1695610265224" duration="58000" />
       <workItem from="1695610333288" duration="10000" />
       <workItem from="1695610370648" duration="45000" />
-      <workItem from="1695610424176" duration="967000" />
+      <workItem from="1695610424176" duration="1734000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <option name="closed" value="true" />
@@ -107,7 +107,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695610760857</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="credentials hidden.">
+      <option name="closed" value="true" />
+      <created>1695611482418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695611482418</updated>
+    </task>
+    <task id="LOCAL-00004" summary="credentials hidden.">
+      <option name="closed" value="true" />
+      <created>1695611711880</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695611711880</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +155,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit." />
     <MESSAGE value="app password added." />
-    <option name="LAST_COMMIT_MESSAGE" value="app password added." />
+    <MESSAGE value="credentials hidden." />
+    <option name="LAST_COMMIT_MESSAGE" value="credentials hidden." />
   </component>
 </project>

@@ -1,8 +1,7 @@
 //import libraries
 
 import recipients.*;
-import email.Mail;
-import email.MailManager;
+import email.*;
 
 import javax.mail.MessagingException;
 import java.io.File;
