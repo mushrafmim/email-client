@@ -4,14 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="add starter files to docs folder." />
+    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="fix credential loading error">
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidEmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/EmailValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/email/MailManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/email/MailManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mushrafmim"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="72893127-0840-400e-b413-c79e8281f009" />
+        <option name="url" value="https://github.com/mushrafmim/email-client.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,13 +79,26 @@
   <component name="RunManager">
     <configuration name="EmailClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EmailClient" />
-      <module name="email-client-maven" />
+      <module name="email-client" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="email-client-maven" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="email-client-maven" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,7 +127,8 @@
       <workItem from="1695610265224" duration="58000" />
       <workItem from="1695610333288" duration="10000" />
       <workItem from="1695610370648" duration="45000" />
-      <workItem from="1695610424176" duration="3949000" />
+      <workItem from="1695610424176" duration="4087000" />
+      <workItem from="1695615048679" duration="1395000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <option name="closed" value="true" />
@@ -159,7 +202,31 @@
       <option name="project" value="LOCAL" />
       <updated>1695614343826</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update starter file in References.">
+      <option name="closed" value="true" />
+      <created>1695614416120</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695614416120</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix formatting">
+      <option name="closed" value="true" />
+      <created>1695614474061</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695614474061</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix credential loading error">
+      <option name="closed" value="true" />
+      <created>1695616018535</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695616018535</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +264,9 @@
     <MESSAGE value="update description." />
     <MESSAGE value="fix formatting README.md" />
     <MESSAGE value="add starter files to docs folder." />
-    <option name="LAST_COMMIT_MESSAGE" value="add starter files to docs folder." />
+    <MESSAGE value="update starter file in References." />
+    <MESSAGE value="fix formatting" />
+    <MESSAGE value="fix credential loading error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix credential loading error" />
   </component>
 </project>

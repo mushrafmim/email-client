@@ -78,8 +78,6 @@ public class MailManager {
 
             credentials.load(input);
 
-            System.out.println(credentials.getProperty("email"));
-
             return credentials;
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -96,7 +94,6 @@ public class MailManager {
         String username = credentials.getProperty("email");
         String password = credentials.getProperty("password");
 
-        System.out.println(username);
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");

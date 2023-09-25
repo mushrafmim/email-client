@@ -1,7 +1,9 @@
 //import libraries
 
+import exceptions.InvalidEmailException;
 import recipients.*;
 import email.*;
+import utilities.EmailValidator;
 
 import javax.mail.MessagingException;
 import java.io.File;
@@ -21,7 +23,7 @@ public class EmailClient {
         // Loading all the recipient from clientList.txt to an arrayList
         RecipientManager.loadRecipients();
 
-//         Sending the wishes to the people who have birthday on the particular day.
+        // Sending the wishes to the people who have birthday on the particular day.
         RecipientManager.sendBirthdayWish();
 
         // Loading the sent emails from SentMail.ser to an array list
@@ -70,6 +72,10 @@ public class EmailClient {
 
                 System.out.println("Enter the email to send: (email, subject, content)");
                 String[] email = scanner.nextLine().strip().split("(, )");
+
+                if (!EmailValidator.isValidEmail(email[0])) {
+                    throw new InvalidEmailException("Invalid email address: " + email[0]);
+                }
 
                 Mail newEmail = new Mail(email[0], email[1], email[2]);
                 MailManager.sendMail(newEmail);
