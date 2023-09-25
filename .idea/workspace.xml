@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="credentials hidden.">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EmailClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <workItem from="1695610265224" duration="58000" />
       <workItem from="1695610333288" duration="10000" />
       <workItem from="1695610370648" duration="45000" />
-      <workItem from="1695610424176" duration="1734000" />
+      <workItem from="1695610424176" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <option name="closed" value="true" />
@@ -123,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695611711880</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update README.md">
+      <option name="closed" value="true" />
+      <created>1695612212505</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695612212505</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +163,7 @@
     <MESSAGE value="initial commit." />
     <MESSAGE value="app password added." />
     <MESSAGE value="credentials hidden." />
-    <option name="LAST_COMMIT_MESSAGE" value="credentials hidden." />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
 </project>

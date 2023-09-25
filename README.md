@@ -13,3 +13,8 @@ This project is a command line based email client with multiple options.
   * File Handling
   * Object Serialization
   * Emailing
+
+## References
+JavaMail API - Sending email via Gmail SMTP Example (Tutorial)
+https://mkyong.com/java/javamail-api-sending-email-via-gmail-smtp-example/
+
