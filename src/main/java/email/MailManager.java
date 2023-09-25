@@ -76,6 +76,8 @@ public class MailManager {
         try {
             InputStream input = new FileInputStream("config.properties");
 
+            credentials.load(input);
+
             System.out.println(credentials.getProperty("email"));
 
             return credentials;
@@ -93,6 +95,8 @@ public class MailManager {
 
         String username = credentials.getProperty("email");
         String password = credentials.getProperty("password");
+
+        System.out.println(username);
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
