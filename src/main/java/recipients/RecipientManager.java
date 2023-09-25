@@ -65,6 +65,7 @@ public class RecipientManager {
     }
 
     public static void loadRecipients() throws IOException, ParseException {
+        System.out.println("\nLoading Recipients...");
         FileReader recipientsFile = new FileReader("clientList.txt");
 
         BufferedReader bufferedReader = new BufferedReader(recipientsFile);
@@ -77,6 +78,8 @@ public class RecipientManager {
             createRecipient(recipientDetails);
 
         }
+
+        System.out.println(recipientsList.size() + " Recipients Loaded.");
     }
 
     public static ArrayList<Wishable> findRecipientByBirthday(Date birthDate) {
@@ -86,11 +89,11 @@ public class RecipientManager {
             if (recipient instanceof OfficialFriendRecipients || recipient instanceof PersonalRecipient) {
 
                 Wishable wishableRecipient = (Wishable) recipient;
+
                 if (
                         birthDate.getDate() == wishableRecipient.getBirthDate().getDate() &&
                                 birthDate.getMonth() == wishableRecipient.getBirthDate().getMonth()
                 ) {
-                    System.out.println("Adding");
                     birthdayRecipients.add(wishableRecipient);
                 }
             }
@@ -108,12 +111,14 @@ public class RecipientManager {
 
 
     public static void sendBirthdayWish() throws MessagingException {
+        System.out.println("\nSending Birthday Wishes...");
         ArrayList<Wishable> birthdayRecipients = findRecipientByBirthday(new Date());
 
         for (Wishable birthdayRecipient: birthdayRecipients) {
 
             MailManager.sendMail(birthdayRecipient.getGreetingMail());
         }
+        System.out.println("Sending Birthday Wishes Completed.!");
     }
 
     public static ArrayList<Wishable> findRecipientsByBirthdate(Date date) {

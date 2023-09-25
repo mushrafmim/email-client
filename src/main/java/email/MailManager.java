@@ -17,38 +17,28 @@ public class MailManager {
     public static void loadMail() {
         try {
 
+            System.out.println("\nLoading Sent Emails...");
             FileInputStream fileStream = new FileInputStream("SentMail.ser");
+
             ObjectInputStream os = new ObjectInputStream(fileStream);
 
 
-            while (os.available() > 0) {
+            while (fileStream.available() > 0) {
                 Mail mail = (Mail) os.readObject();
                 sentMail.add(mail);
             }
             fileStream.close();
+
+            System.out.println(sentMail.size() + " mails loaded.");
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    public static void findMailByDate(Date date) {
-
-        for (Mail mail: sentMail) {
-
-            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-
-            if (sdf.format(mail.getSentOn()).equals(sdf.format(date))) {
-                System.out.println("To : " +mail.getRecipient());
-                System.out.println("Subject : " + mail.getSubject());
-                System.out.println("Body : " + mail.getContent() + "\n\n");
-            }
-        }
-    }
-
     private static void saveMail(Mail email) {
         try {
-            System.out.println(email.getSentOn());
+            email.setSentOn(new Date());
             File f = new File("SentMail.ser");
 
             FileOutputStream fileStream = new FileOutputStream("SentMail.ser", true);
@@ -65,6 +55,20 @@ public class MailManager {
 
         } catch (IOException e) {
             System.out.println(e);
+        }
+    }
+
+    public static void findMailByDate(Date date) {
+
+        for (Mail mail: sentMail) {
+
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+            if (sdf.format(mail.getSentOn()).equals(sdf.format(date))) {
+                System.out.println("To : " +mail.getRecipient());
+                System.out.println("Subject : " + mail.getSubject());
+                System.out.println("Body : " + mail.getContent() + "\n\n");
+            }
         }
     }
 
@@ -102,7 +106,7 @@ public class MailManager {
 
             Transport.send(message);
 
-            System.out.println("Done");
+            saveMail(mail);
 
         } catch (MessagingException e) {
             e.printStackTrace();

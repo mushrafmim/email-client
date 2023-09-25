@@ -1,5 +1,3 @@
-package org.example;// 200404V
-
 //import libraries
 
 import recipients.*;
@@ -21,8 +19,17 @@ public class EmailClient {
 
         initializeApp();
 
+        // Loading all the recipient from clientList.txt to an arrayList
+        RecipientManager.loadRecipients();
+
+//         Sending the wishes to the people who have birthday on the particular day.
+        RecipientManager.sendBirthdayWish();
+
+        // Loading the sent emails from SentMail.ser to an array list
+        MailManager.loadMail();
+
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter option type: \n"
+        System.out.println("\nEnter option type: \n"
                 + "1 - Adding a new recipient\n"
                 + "2 - Sending an email\n"
                 + "3 - Printing out all the recipients who have birthdays\n"
@@ -32,14 +39,7 @@ public class EmailClient {
         int option = scanner.nextInt();
         scanner.nextLine();
 
-        // Loading all the recipient from clientList.txt to an arrayList
-        RecipientManager.loadRecipients();
 
-        // Sending the wishes to the people who have birthday on the particular day.
-//        RecipientManager.sendBirthdayWish();
-
-        // Loading the sent emails from SentMail.ser to an array list
-//        MailManager.loadMail();
 
         switch(option) {
             case 1:
