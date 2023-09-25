@@ -58,10 +58,12 @@ Command-line options should be available for:
   * Printing out the number of recipient objects in the application  
   * Save the recipient data into clientList.txt.
 
-You may use the code given in this link to implement the basic functionality of the mail client.  
+You may use the code given in this [link](/docs/starter.txt) to implement the basic functionality of the mail client.  
 
 
 ## References
+Starter File  
+https://github.com/mushrafmim/email-client/docs/starter.txt  
 JavaMail API - Sending email via Gmail SMTP Example (Tutorial)
 https://mkyong.com/java/javamail-api-sending-email-via-gmail-smtp-example/
 
