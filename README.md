@@ -4,11 +4,11 @@ Module - CS1040 Program Construction
 Semester - 02
 
 ## Description
-    In this assignment, you will be implementing a command-line based email client.
+In this assignment, you will be implementing a command-line based email client.
 
-    The email client has two types of recipients
+The email client has two types of recipients
 * official
-* Some official recipients are close friends.
+  * Some official recipients are close friends.
 * personal
 
 ## Technologies
@@ -46,7 +46,7 @@ Semester - 02
 
 6. All the emails sent out by the email client should be saved into the hard disk, in the form of objects – object serialization can be used for this. The user should be able to retrieve information of all the mails sent on a particular day by using a command-line option. 
 
-    You only have to send out messages. No need to implement the logic to receive messages.
+You only have to send out messages. No need to implement the logic to receive messages.
 
 ## Interface
 Command-line options should be available for:

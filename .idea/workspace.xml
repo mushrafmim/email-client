@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="added description.">
+    <list default="true" id="e2e18008-2f76-49de-a484-cf647d30da90" name="Changes" comment="update description.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -88,7 +88,7 @@
       <workItem from="1695610265224" duration="58000" />
       <workItem from="1695610333288" duration="10000" />
       <workItem from="1695610370648" duration="45000" />
-      <workItem from="1695610424176" duration="3403000" />
+      <workItem from="1695610424176" duration="3647000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <option name="closed" value="true" />
@@ -138,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695612528570</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update description.">
+      <option name="closed" value="true" />
+      <created>1695614015140</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695614015140</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +181,7 @@
     <MESSAGE value="credentials hidden." />
     <MESSAGE value="update README.md" />
     <MESSAGE value="added description." />
-    <option name="LAST_COMMIT_MESSAGE" value="added description." />
+    <MESSAGE value="update description." />
+    <option name="LAST_COMMIT_MESSAGE" value="update description." />
   </component>
 </project>
